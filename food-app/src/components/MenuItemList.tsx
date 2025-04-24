@@ -5,7 +5,7 @@ interface MenuItem {
     name: string;
     description: string;
     price: number;
-    image: string;
+    imageurl: string;
   }
 
 
@@ -17,7 +17,7 @@ export default function MenuItemList() {
     useEffect(() => {
         const fetchMenuItems = async () => {
             try {
-                const response = await fetch('http://localhost:8080/api/menuitems')
+                const response = await fetch('/api/menuitems')
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`)
                 }
@@ -42,7 +42,8 @@ export default function MenuItemList() {
             <ul style={{ listStyle: 'none', padding: 0 }}>
                 {menuItems.map((item) => (
                 <li key={item.id} style={{ marginBottom: '20px', borderBottom: '1px solid #ccc', paddingBottom: '10px' }}>
-                    <img src={item.image} alt={item.name} style={{ width: '150px', height: 'auto' }} />
+                    <img src={item.imageurl} alt={item.name} style={{ width: '150px', height: 'auto' }} />
+
                     <h3>{item.name}</h3>
                     <p>{item.description}</p>
                     <p><strong>${item.price.toFixed(2)}</strong></p>
