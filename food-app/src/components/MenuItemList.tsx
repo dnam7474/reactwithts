@@ -28,6 +28,7 @@ export default function MenuItemList() {
                 console.log('Error fetching menu items', err);
                 setError('Failed to load menu items.');
                 setLoading(false)
+                console.log("test")
             }
         };
         fetchMenuItems();
