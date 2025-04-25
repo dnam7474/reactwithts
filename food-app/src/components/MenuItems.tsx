@@ -12,7 +12,7 @@ interface MenuItem {
 }
 
 interface MenuItemsProps {
-
+    addToCart: (item: MenuItem) => void;
 }
 
 const MenuItems: React.FC<MenuItemsProps> = ({ addToCart }) => {

@@ -73,7 +73,6 @@ const CheckoutPage: React.FC = () => {
     const taxAmount = subtotal * taxRate;
 
     const orderData: OrderData = {
-        // userid: 1, // Hardcode or get from logged-in user state later
         ordertime: orderTime,
         pickuptime: orderTime,
         tax: parseFloat(taxAmount.toFixed(2)),
