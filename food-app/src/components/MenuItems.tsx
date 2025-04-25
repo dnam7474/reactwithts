@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './MenuItems.module.css';
+import { useCart } from '../contexts/CartContext';
 
 interface MenuItem {
     id: number;
@@ -15,7 +16,8 @@ interface MenuItemsProps {
     addToCart: (item: MenuItem) => void;
 }
 
-const MenuItems: React.FC<MenuItemsProps> = ({ addToCart }) => {
+const MenuItems: React.FC<MenuItemsProps> = () => {
+    const { addToCart } = useCart();
     const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);

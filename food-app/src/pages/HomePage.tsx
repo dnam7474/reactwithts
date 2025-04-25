@@ -1,14 +1,19 @@
 import React from 'react';
 import MenuItems from '../components/MenuItems';
-import { useCart } from '../contexts/CartContext';
+
 
 const HomePage: React.FC = () => {
-    const { addToCart } = useCart();
+    
 
     return (
         <div>
+<<<<<<< Updated upstream
         <h1 style={{ textAlign: 'center' }}>Menu</h1>
         <MenuItems addToCart={addToCart} />
+=======
+        <h1>Menu</h1>
+        <MenuItems />
+>>>>>>> Stashed changes
         </div>
     );
 };
