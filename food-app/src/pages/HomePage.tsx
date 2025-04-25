@@ -7,7 +7,7 @@ const HomePage: React.FC = () => {
 
     return (
         <div>
-        <h1>Menu</h1>
+        <h1 style={{ textAlign: 'center' }}>Menu</h1>
         <MenuItems addToCart={addToCart} />
         </div>
     );
