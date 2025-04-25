@@ -1,0 +1,67 @@
+.ordersContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.ordersContainer h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ordersContainer > p {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.orderList {
+list-style: none;
+padding: 0;
+}
+
+.orderItem {
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin-bottom: 10px;
+transition: background-color 0.2s ease;
+}
+
+.orderItem:hover {
+    background-color: #f1f1f1;
+}
+
+.orderLink {
+display: block;
+padding: 15px;
+text-decoration: none;
+color: #333;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.orderLink div {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.orderLink div:first-child {
+    font-weight: bold;
+    flex-basis: 20%;
+}
+.orderLink div:last-child {
+    text-align: right;
+    font-style: italic;
+    color: #555;
+}
+
+
+.errorText {
+    color: #dc3545;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}

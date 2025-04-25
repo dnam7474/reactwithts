@@ -1,0 +1,98 @@
+    .orderContainer {
+        padding: 20px;
+        max-width: 700px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        font-family: sans-serif;
+    }
+
+    .orderContainer h1,
+    .orderContainer h2,
+    .orderContainer h3 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .orderContainer > p {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 1.1em;
+        color: #555;
+    }
+
+
+    .orderDetails, .summary {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border: 1px solid #eee;
+        border-radius: 5px;
+    }
+
+    .orderDetails p, .summary p {
+        margin: 8px 0;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .orderDetails strong {
+        color: #333;
+    }
+
+    .itemList {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        gap: 15px;
+    }
+
+    .item:last-child {
+        border-bottom: none;
+    }
+
+    .itemImage {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .itemName {
+        flex-grow: 1;
+        font-weight: bold;
+        color: #444;
+    }
+
+    .itemPrice {
+        font-weight: bold;
+        color: #008000;
+    }
+
+
+    .summary {
+        text-align: right;
+    }
+
+    .totalPrice {
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #333 !important;
+        margin-top: 10px !important;
+    }
+
+    .errorText {
+        color: #dc3545;
+        text-align: center;
+        font-weight: bold;
+        padding: 20px;
+    }

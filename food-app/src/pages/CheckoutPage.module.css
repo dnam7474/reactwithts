@@ -1,0 +1,164 @@
+    .checkoutContainer {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .checkoutContainer h1,
+    .checkoutContainer h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .cartList {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .cartItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .itemImage {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+
+    .itemDetails {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itemDetails span:first-child {
+        font-weight: bold;
+    }
+
+
+    .itemQuantity {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .quantityInput {
+        width: 50px;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .itemTotal {
+        font-weight: bold;
+        min-width: 60px;
+        text-align: right;
+    }
+
+
+    .removeButton {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.8em;
+    }
+
+    .removeButton:hover {
+        background-color: #c82333;
+    }
+
+    .summary {
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+        text-align: right;
+    }
+
+    .summary p {
+        margin: 5px 0;
+        color: #555;
+    }
+
+    .tipInput {
+        margin: 10px 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .tipInputField {
+        width: 70px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+
+    .totalPrice {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #333 !important;
+    }
+
+    .paymentForm {
+        margin-top: 30px;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+    }
+
+    .paymentForm input {
+        display: block;
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .errorText {
+        color: #dc3545;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+
+    .submitButton {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.2s ease;
+    }
+
+    .submitButton:hover {
+        background-color: #0056b3;
+    }
+
+    .submitButton:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }

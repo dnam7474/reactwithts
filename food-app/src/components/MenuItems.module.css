@@ -1,0 +1,96 @@
+.menuContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.menuItemCard {
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+width: 250px;
+display: flex;
+flex-direction: column;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease-in-out;
+}
+
+.menuItemCard:hover {
+    transform: translateY(-5px);
+}
+
+
+.menuItemImage {
+width: 100%;
+height: 180px;
+object-fit: cover;
+display: block;
+}
+
+.menuItemDetails {
+padding: 15px;
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+justify-content: space-between;
+}
+
+.menuItemName {
+font-size: 1.2em;
+margin-top: 0;
+margin-bottom: 10px;
+color: #333;
+}
+
+.menuItemDescription {
+font-size: 0.9em;
+color: #666;
+margin-bottom: 15px;
+flex-grow: 1;
+line-height: 1.4;
+}
+
+.menuItemFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+
+.menuItemPrice {
+font-weight: bold;
+color: #008000;
+font-size: 1.1em;
+}
+
+.addButton {
+background-color: #28a745;
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 0.9em;
+transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+background-color: #218838;
+}
+
+
+@media (max-width: 600px) {
+.menuItemCard {
+    width: calc(50% - 10px);
+}
+}
+
+@media (max-width: 400px) {
+.menuItemCard {
+    width: calc(100% - 0px);
+}
+}
